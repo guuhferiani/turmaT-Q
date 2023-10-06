@@ -1,0 +1,16 @@
+body{
+    height: 100%; /* altura */
+    width: 100%;  /* largura */ 
+    display: flex;
+    justify-content: center;
+    background: ; /* fundo do corpo */ 
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+.imagem img{
+    width: 170px; /* tamanho da foto do logo */
+    border-radius: 200px;
+    margin-top: 30px;    
+}
