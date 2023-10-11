@@ -1,16 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&family=Victor+Mono:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    height: 100%; /* altura */
-    width: 100%;  /* largura */ 
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    background: ; /* fundo do corpo */ 
+    background: linear-gradient(#75e0fb, #bbb9b4);
+    background-repeat: no-repeat;
 }
 .imagem{
     display: flex;
     justify-content: center;
 }
+
 .imagem img{
-    width: 170px; /* tamanho da foto do logo */
+    width: 170px;
     border-radius: 200px;
-    margin-top: 30px;    
+    margin-top: 30px;
+}
+.name{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #1a4994;
+    font-family: 'Metal Mania', cursive;
+}
+.item{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Metal Mania', cursive;
+    color: rgb(25, 36, 87);
+    border: 1px solid rgb(63, 197, 246);;
+    border-radius: 50px;
+    width: 570px;
+    height: 60px;
+    margin-bottom: 7px;
+    font-size: 22px;
+    background:rgb(247, 245, 243);
+    box-shadow: 0 5px 5px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.icon, .email {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 5px 5px rgba(0,0,0,.1);
+    cursor: pointer;
+    margin: 3px;
+    overflow: hidden;
+}
+.icon i, .email i{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 30px;
+    background-color: rgb(237, 237, 237);
+    color: rgb(69, 177, 240); 
+    cursor: pointer;
+}
+.icon span a{
+    list-style: none;
+    font-family: 'Metal Mania', cursive;
+    float: right;
+    margin-right: 23px;
+    font-weight: 100;
+    color: #4d8cf9;
+    line-height: 35px;
+    font-size: 17px;
+}
+.name-icon {
+    font-family: 'Metal Mania', cursive;
+    margin-right: 40px;
+    float: right;
+    color: #f2f2f2;
+    font-weight: 100;
+    line-height: 35px;
+    font-size: 17px;
+}
+.icon:hover {
+    width: 125px;
+    background-color: rgb(226, 225, 224);
+    border-radius: 20px;
+}
+
+.icon:nth-child(1):hover i{
+    background: #0c0b0b;
+}
+.icon:nth-child(2):hover i{
+    background: #a050cf;
+}
+.icon:nth-child(3):hover i{
+    background: #3b5998;
+}
+.icon:nth-child(4):hover i{
+    background: #6441A5;
+}
+.email:hover i{
+    background: rgb(255, 38, 38);
+}
+.redes-sociais{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: 'Victor Mono', monospace;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 35px;
+    width: 500px;
+    height: 200px;
+    padding: 1.5rem 2rem;
+    border-radius: 24px;
+    color: rgb(237, 233, 233);
+    background: rgb(3, 26, 62);
+    overflow: hidden;
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.langs{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.langs img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    border-radius: 200px;
+    margin: 5px;
+    background: rgb(163, 160, 157);
+    color: rgba(232,202,179);
+    box-shadow: 2px 2px 2px rgb(98, 98, 98);;
+    cursor: pointer;
+
+}
+.redes-sociais a{
+    text-decoration: none;
+}
+.contato{
+    background: transparent;
+    border: none;
+}
+
+#movie{
+    padding: 1rem;
+    margin: auto;
+    display: none
+}
+#movie.active{
+    display: block;
+}
+.campos{
+    margin-top: 15px;
+}
+h1{
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    color: #1a4994;
+    font-family: 'Metal Mania', cursive;
+}
+.projetos {
+    margin: auto;
+    margin-top: 40px;
+    flex-direction: column;
+}
+.projetos a{
+    text-decoration: none;
+    color: rgba(232,202,179);
+}
+
+.item:hover, .submit:hover{
+    transition: 0.2s;
+    background-color: #cecece;
+}
+.rodape p {
+    color: #1a4994;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px ;
+    font-family: 'Metal Mania', cursive;
+  }
+
+   
+@media (max-width: 700px) {
+    .imagem img{
+        width: 150px;
+        border-radius: 200px;
+        margin-top: 30px;
+    }
+    .text{
+        width: 290px;
+    }
+    .item{
+        width: 350px;
+    }
+    .langs img{
+        width: 165px;
+    }
+    #movie{
+        width: 330px;
+    }
+}
+@media (max-width: 500px) {
+    .imagem img{
+        width: 130px;
+        border-radius: 200px;
+        margin-top: 30px;
+    }
+    .name{
+        font-size: 26px;
+    }
+    h1{
+        margin-top: 35px;
+        font-size: 24px;
+    }
+    .text{
+        padding: 1.4rem 1.1rem;
+        width: 244px;
+        height: 200px;
+        margin-top: 30px;
+    }
+    .text p{
+        font-size: 14px;
+    }
+    text p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #movie{
+        width: 270px;
+        height: 160px;
+    }
+    .item{
+        height: 40px;
+        width: 265px;
+    }
+    .langs img{
+        margin-top: 15px;
+        width: 120px;
+    }
+    .icon, .email{
+        height: 25px;
+        width: 25px;
+        border-radius: 30px;
+    }
+    .icon i, .email i{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 30px;
+    }
+    .icon:hover {
+        width: 125px;
+    }
+    .rodape p {
+        font-size: 25px;
+        margin-top: 20px;
+        padding: 50px ;
+    }
+    .icon:hover{
+        width: 25px;
+    }
+    .icon span{
+        margin-right: 43px;
+        font-weight: 100;
+        line-height: 24px;
+        font-size: 15px;
+    }
 }
