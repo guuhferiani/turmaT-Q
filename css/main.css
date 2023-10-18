@@ -1,65 +1,64 @@
-/* Meu primeiro Comentário */
-/* Reset do CSS para o navegador*/ 
-*{
-    margin: 0;  /* Margem */
-    padding: 0;  /* Preenchimento */
-} 
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&display=swap');
 
-/* Corpo do Site */ 
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&family=Victor+Mono:wght@100&display=swap');
+
+*{   /* Reset para Navegador  */
+    margin: 0;
+    padding: 0;
+}
 body{
-    height: 100%; /* altura */
-    width: 100%; /* largura */
-    display: flex;
+    height: 100%;
+    width: 100%;
+    display: flex; /* Voltar na explicação */  
     justify-content: center;
-    background: linear-gradient(#64ddff,#9d9d9d);
+    background: linear-gradient(#75e0fb, #bbb9b4);
     background-repeat: no-repeat;
-}   
-/* Logo  */ 
+}
 .imagem{
     display: flex;
     justify-content: center;
 }
+
 .imagem img{
     width: 170px;
     border-radius: 200px;
-    margin-top: 150px;
+    margin-top: 30px;
 }
-
-/* Titulo */ 
 .nome{
     margin-top: 10px;
     display: flex;
     justify-content: center;
-    font-size: 32px;
-    font-weight: 600;
-    color: #308ff4;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;  /*  tamanho do texto ou fonte  */ 
+    font-weight: 600; /* bold  */
+    color: #1a4994;
+    font-family: 'Times New Roman', Times, serif;
 }
 .redes-sociais{
-    margin-top: 10px;  /* margem superior   */ 
-    justify-content: center;  /*centralizar texto */ 
+    margin-top: 20px;  /* margem superior */
+    display: flex;
+    justify-content: center;
     align-items: center;
-    /* background: red;  cor para da DIV */ 
 }
-.icon, .email{
+.redes-sociais a{
+    text-decoration: none;
+}
+.icone, .email{
+    display: flex;
     height: 35px;
     width: 35px;
     border-radius: 30px;
-    transition: all 0.3s ease-out;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 1);  /* caixa de sombra  */
-    margin: 5px;
-    overflow: hidden;  /* efeito Mascara */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+    margin: 3px;
+    overflow: hidden; 
 }
-.icon i, .email i{
-    display: inline-block;
+.icone i, .email i{
+    display: flex;
     width: 35px;
     height: 35px;
     line-height: 35px;
-    text-align: center; /* alinhar texto */
-    font-size: 20px; /* 22 */
-    border-radius: 30px;
-    background-color:azure; 
-    color: #308ff4;  /* cor do texto */
-    cursor: pointer;
+    text-align: center;
+    font-size: 22px;
+    background: #bbb9b4;
+    color: #1a4994;
 }
-
