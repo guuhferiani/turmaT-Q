@@ -42,23 +42,38 @@ body{
 .redes-sociais a{
     text-decoration: none;
 }
-.icone, .email{
+.icone, #email{
     display: flex;
-    height: 35px;
     width: 35px;
+    height: 35px;
     border-radius: 30px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
     margin: 3px;
     overflow: hidden; 
 }
-.icone i, .email i{
-    display: flex;
+.icone i, #email i{
+    display: inline-block;
     width: 35px;
     height: 35px;
     line-height: 35px;
     text-align: center;
     font-size: 22px;
+    border-radius: 30px;
     background: #bbb9b4;
     color: #1a4994;
+}
+.icone span a{
+    margin: auto;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: ; 
+    margin-left: 15px;
+    color: #1a4994;
+    line-height: 35px;
+    font-size: 15px;
+}
+.icone:hover{
+    width: 125px;
+    background: #f0f0f0;
 }
