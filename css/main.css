@@ -77,3 +77,58 @@ body{
     width: 125px;
     background: #f0f0f0;
 }
+
+.texto {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 30px;
+    padding: ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    width: 500px;
+    height: 250px;
+    padding: 35px;
+    border-radius: 10px;
+    color: rgb(239, 239, 239);
+    background: #204478;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(22, 22, 22, 0.4); 
+}
+.sobre-mim {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    color: rgb(232, 232, 232);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 35px;
+}
+.subtitulo{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 35px;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #204478;
+}
+.linguagem{
+    display: flex;
+    justify-content: center;
+    
+}
+.linguagem img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(53, 53, 53);
+    margin: 5px;
+}
