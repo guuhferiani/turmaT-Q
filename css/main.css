@@ -2,14 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&family=Victor+Mono:wght@100&display=swap');
 
-*{   /* Reset para Navegador  */
+*{
     margin: 0;
     padding: 0;
 }
 body{
     height: 100%;
     width: 100%;
-    display: flex; /* Voltar na explicação */  
+    display: flex;
     justify-content: center;
     background: linear-gradient(#75e0fb, #bbb9b4);
     background-repeat: no-repeat;
@@ -18,7 +18,6 @@ body{
     display: flex;
     justify-content: center;
 }
-
 .imagem img{
     width: 170px;
     border-radius: 200px;
@@ -28,31 +27,24 @@ body{
     margin-top: 10px;
     display: flex;
     justify-content: center;
-    font-size: 32px;  /*  tamanho do texto ou fonte  */ 
-    font-weight: 600; /* bold  */
+    font-size: 32px;
+    font-weight: 600;
     color: #1a4994;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Metal Mania', cursive;
 }
-.redes-sociais{
-    margin-top: 20px;  /* margem superior */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.redes-sociais a{
-    text-decoration: none;
-}
-.icone, #email{
-    display: flex;
-    width: 35px;
+
+.icone, .email {
+    display: inline-block;
     height: 35px;
+    width: 35px;
     border-radius: 30px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease-out;
+    box-shadow: 0 5px 5px rgba(0,0,0,.1);
+    cursor: pointer;
     margin: 3px;
-    overflow: hidden; 
+    overflow: hidden;
 }
-.icone i, #email i{
+.icone i, .email i{
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -60,75 +52,197 @@ body{
     text-align: center;
     font-size: 22px;
     border-radius: 30px;
-    background: #bbb9b4;
-    color: #1a4994;
+    background-color: rgb(237, 237, 237);
+    color: rgb(69, 177, 240); 
+    cursor: pointer;
 }
 .icone span a{
-    margin: auto;
     list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    float: ; 
-    margin-left: 15px;
-    color: #1a4994;
+    font-family: 'Metal Mania', cursive;
+    float: right;
+    margin-right: 23px;
+    font-weight: 100;
+    color: #4d8cf9;
     line-height: 35px;
-    font-size: 15px;
+    font-size: 17px;
 }
-.icone:hover{
+.nome-icone {
+    font-family: 'Metal Mania', cursive;
+    margin-right: 40px;
+    float: right;
+    color: #f2f2f2;
+    font-weight: 100;
+    line-height: 35px;
+    font-size: 17px;
+}
+.icone:hover {
     width: 125px;
-    background: #f0f0f0;
+    background-color: rgb(226, 225, 224);
+    border-radius: 20px;
 }
-
-.texto {
+.redes-sociais{
+    margin-top: 10px;
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
+}
+.redes-sociais a{
+    text-decoration: none;
+}
+
+.texto{
+    display: flex;
+    position: relative; /*   */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     margin: 50px 30px;
-    padding: ;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Victor Mono', monospace;
     font-size: 20px;
     text-align: justify;
-    width: 500px;
-    height: 250px;
-    padding: 35px;
-    border-radius: 10px;
-    color: rgb(239, 239, 239);
-    background: #204478;
+    width: 700px;
+    height: 200px;
+    padding: 50px;
+    border-radius: 24px;
+    color: rgb(237, 233, 233);
+    background: rgb(3, 26, 62);
     overflow: hidden;
-    box-shadow: 5px 5px 5px rgba(22, 22, 22, 0.4); 
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
 }
-.sobre-mim {
+.sobre-mim{
     position: absolute;
-    top: 20px;
+    top: 10px; /* Move o topo do h2 para o centro vertical */
+    /* para valores em porcetagem - transform: ;*/
     display: flex;
-    color: rgb(232, 232, 232);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-weight: 600;
+    font-size: 30px;
     line-height: 35px;
 }
 .subtitulo{
+    font-weight: 100;  /* peso do texto ou negrito */
+    color: #4d8cf9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
-    margin-top: 100px;
-    margin-bottom: 35px;
     justify-content: center;
-    font-weight: 600;
-    font-size: 28px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #204478;
+    font-size: 35px;
+    margin-top: 45px;
+    margin-bottom: 15px;
 }
 .linguagem{
     display: flex;
     justify-content: center;
-    
+    margin-top: 40px;
 }
 .linguagem img{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 280px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(53, 53, 53);
+    width: 400px;
+    border-radius: 20px;
     margin: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+}
+.projetos{
+    margin-top: 100px;
+    flex-direction: column;
+}
+.item{
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 40px;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1a4994;
+    background: white;
+    box-shadow: 2px 5px 2px rgba(53, 53, 53, 0.5);
+    border-radius: 5px;
+    cursor: pointer; 
+}
+.item:hover{
+    transition: 0.2s;
+    background: rgb(199, 199, 199);
+}
+.video{
+    padding: 15px;
+    margin: auto;
+    display: none;
+}
+.video:active{
+    display:block ;
+}
+footer p{
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: #1a4994;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+/* FIM CSS DESKTOP  */
+
+
+/* Recurso para Renderizar o conteudo do site e adapte para diversos dispositivos Móveis ou resoluções */
+
+@media (max-width: 700px){
+    .imagem img{
+        width: 140px;
+        margin-top: 25px;
+    }
+    .texto{
+        width: 300px;
+        height: 430px;
+    }
+    .linguagem img{
+        width: 220px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .item{
+        width: 350px;
+    }
+    .video{
+        width: 250px;
+    }
+}  /* fim Resolução 700px */ 
+
+
+/* resolução para Smarthphone */
+@media (max-width: 500px) {
+    .imagem img {
+       width: 100px;
+       margin-top: 30px;
+    }
+    .nome{
+        font-size: 25px;
+    }
+    .texto{
+        margin-top: 50px;
+        width: 200px;
+        height: 620px;
+        padding: 30px;
+    }
+    .sobre-mim{
+        font-size: 20px;
+    }
+    .subtitulo{
+        font-size: 25px;
+    }
+   .item{
+    width: 260px;
+    height: 40px;
+    margin-top: 15px;
+   }
+   .video {
+    width: 250px;
+    height: 160px;
+   }
 }
