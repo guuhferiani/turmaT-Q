@@ -173,9 +173,10 @@ body{
     margin: auto;
     display: none;
 }
-.video:active{
-    display:block ;
+.video.active{
+    display: block;
 }
+
 footer p{
     margin-top: 50px;
     padding: 50px;
