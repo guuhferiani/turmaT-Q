@@ -1,10 +1,10 @@
 const album = document.getElementById('album');
-const casamentos = document.getElementById('casamentos');
 const buffet = document.getElementById('buffet');
+const videoBuffet = document.querySelector('#videoBuffet');
 
 const videoAlbum = document.querySelector('#videoAlbum');
+const casamentos = document.getElementById('casamentos');
 const videoCasamentos = document.querySelector('#videoCasamentos');
-const videoBuffet = document.querySelector('#videoBuffet');
 
 
 album.addEventListener('click', () => {
